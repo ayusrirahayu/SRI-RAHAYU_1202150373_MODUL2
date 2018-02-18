@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ayusrirahayu.android.srirahayu_1202150373_modul2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Just Donut"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".DineIn"
+            android:label=" Order Activity "
+            android:parentActivityName="com.ayusrirahayu.android.srirahayu_1202150373_modul2.MainActivity">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"/>
+        </activity>
+        <activity android:name=".detail"
+            android:label=" Order Activity "
+            android:parentActivityName="com.ayusrirahayu.android.srirahayu_1202150373_modul2.MainActivity">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"/>
+        </activity>
+        <activity android:name=".menu"
+            android:label=" Order Activity "
+            android:parentActivityName="com.ayusrirahayu.android.srirahayu_1202150373_modul2.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity android:name=".detailmenu"
+            android:label=" Order Activity "
+            android:parentActivityName="com.ayusrirahayu.android.srirahayu_1202150373_modul2.menu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".menu"/>
+        </activity>
+    </application>
+
+</manifest>
